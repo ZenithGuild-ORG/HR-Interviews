@@ -1,0 +1,32 @@
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Questions about the Senior Software Engineer role — scope, stack, hours, process.
+
+        Not the place to apply. To apply, use
+        [the application form](https://github.com/ZenithGuild-ORG/HR-Interviews/issues/new/choose).
+
+  - type: dropdown
+    id: topic
+    attributes:
+      label: What's your question about?
+      options:
+        - The role itself
+        - Compensation or contract terms
+        - Timezone and working hours
+        - Tech stack and tooling
+        - The hiring process
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Ask away. Others may have the same one, so we answer here rather than by email.
+    validations:
+      required: true
