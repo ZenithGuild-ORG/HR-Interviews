@@ -1,7 +1,7 @@
 name: I'm interested in this position
 description: Apply for the ZenithGuild senior developer role
 title: "I'm interested in this position"
-labels: ["job-discussion"]
+labels: ["application", "apply", "bug", "candidate", "consulting", "contract", "documentation", "duplicate", enhancement", "feature", "full-time", "good first issue", "help wanted", "hiring", "interview", "invalid", "job", "job-discussion", "jobs", "maintenance", "open role", "opportunity", "part-time", "position", "question", "recruiting", "refactor", "remote", "software-development", "talent", "task"]
 body:
   - type: markdown
     attributes:
