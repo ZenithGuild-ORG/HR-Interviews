@@ -1,0 +1,14 @@
+title: ""
+labels: ["discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Anything that isn't a direct question about the open role.
+
+  - type: textarea
+    id: body
+    attributes:
+      label: What's on your mind?
+    validations:
+      required: true
