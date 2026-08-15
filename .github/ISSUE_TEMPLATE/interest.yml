@@ -1,7 +1,17 @@
 name: I'm interested in this position
 description: Apply for the ZenithGuild senior developer role
 title: "I'm interested in this position"
+labels: ["application"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Senior Software Engineer — client-facing
+
+        Remote · CET/EST · $60/hr · Part-time or full-time
+
+        Fill in the fields below and submit. We read every application.
+
   - type: input
     id: name
     attributes:
@@ -9,3 +19,93 @@ body:
       description: Please enter your name
     validations:
       required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Email
+      description: Where we should reply
+      placeholder: you@example.com
+    validations:
+      required: true
+
+  - type: input
+    id: links
+    attributes:
+      label: Portfolio / LinkedIn / GitHub
+      description: Links to your work, comma separated
+    validations:
+      required: false
+
+  - type: dropdown
+    id: experience
+    attributes:
+      label: Years shipping software
+      options:
+        - Less than 5
+        - "5–7"
+        - "8–10"
+        - More than 10
+    validations:
+      required: true
+
+  - type: dropdown
+    id: timezone
+    attributes:
+      label: Which timezone do you work in?
+      options:
+        - CET (or within 2 hours of it)
+        - EST (or within 2 hours of it)
+        - Neither
+    validations:
+      required: true
+
+  - type: dropdown
+    id: availability
+    attributes:
+      label: Availability
+      options:
+        - Full-time
+        - Part-time
+        - Either
+    validations:
+      required: true
+
+  - type: textarea
+    id: client_facing
+    attributes:
+      label: Client-facing experience
+      description: >
+        Tell us about a discovery or requirements call you led. What did the
+        client ask for, what did they actually need, and how did you turn that
+        into something your engineers could build?
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical
+    attributes:
+      label: Cloud, APIs, and integration work
+      description: >
+        Briefly describe a system you owned technical decisions on — the stack,
+        the integrations, and a call you'd make differently today.
+    validations:
+      required: true
+
+  - type: textarea
+    id: llm
+    attributes:
+      label: LLMs, RAG, or agent frameworks
+      description: Nice to have, not required. Tell us what you've touched.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before you submit
+      options:
+        - label: I'm comfortable with $60/hr as the rate for this contract
+          required: true
+        - label: I can overlap with CET or EST working hours
+          required: true
