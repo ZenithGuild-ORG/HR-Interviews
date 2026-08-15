@@ -30,6 +30,4 @@ Compensation: $60/hr
 Contract: Part-Time/Full-Time
 TimeZone: CET/EST
 
-You can phrase it like this at the end:
-
 > **If you're interested, click "Get started" with your GitHub account — the title will be "I'm interested in this position".**
