@@ -1,0 +1,11 @@
+name: I'm interested in this position
+description: Apply for the ZenithGuild senior developer role
+title: "I'm interested in this position"
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Your Name
+      description: Please enter your name
+    validations:
+      required: true
